@@ -3,7 +3,13 @@
 	margin: 0px;
 }
 body{
-	background: black;
+	background: #EEEFF5;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: blue;
 }
 .navigator{
 	position: fixed;
@@ -67,7 +73,7 @@ body{
 	top: 90px;
 	left: 1%;
 	width: 98%;
-	background: #C9CCDE;
+	background: #EEEFF5;
 	min-height: 60vh;
 	flex-grow: 1;
 	resize: none;
@@ -93,4 +99,55 @@ body{
 }
 .footer p{
 	margin-left: 5px;
+}
+.about{
+	position: absolute;
+	left: 10px;
+	top:  40px;
+	width: 48%;
+}
+.content h1{
+	font-family: Courier New;
+	font-size: 35;
+	font-style: italic;
+	align-items: center;
+}
+.about h2{
+	font-family: Courier New;
+	font-size: 26;
+	font-style: italic;
+	text-decoration: ;
+}
+.about p{
+	text-align: justify;
+	font-family: Times New Roman;
+	text-transform: capitalize blue;
+}
+.imagen{
+	float: right;
+}
+.imagen img{
+	border: 1px solid;
+	border-color: black;
+	transition: 0.5s;
+}
+.imagen img:hover{
+	transform: scale(110%) translateY(15px);
+	transition: 0.5s;
+	border: 3px dotted;
+	border-color: blue;
+}
+.imagen p{
+	font-family: sans-serif;
+	opacity: 0;
+	transition: 0.5s;
+}
+.imagen img:hover ~p{
+	opacity: 1;
+	transition: 0.5s;
+	transform: translateY(25px);
+}
+.texto{
+	right: 0px;
+	position: relative;
 }
